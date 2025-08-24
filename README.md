@@ -1,4 +1,3 @@
-# env:
 # check env
 - uv venv
 # activate env
@@ -8,7 +7,6 @@
 # deactivate env
 - deactivate
 
-# fastapi
 # run server
 - uvicorn books:app --reload
 - fastapi dev books.py
