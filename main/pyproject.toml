@@ -1,0 +1,23 @@
+[project]
+name = "fast-api"
+version = "0.1.0"
+description = "Fast API App"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "bcrypt==4.0.1",
+    "cryptography",
+    "fastapi",
+    "psycopg2-binary",
+    "PyMySQL",
+    "python-jose",
+    "python-multipart",
+    "SQLAlchemy",
+    "uvicorn",
+    "passlib",
+    "pytest",
+    "httpx",
+    "pytest-asyncio",
+    "aiofiles",
+    "jinja2"
+]
