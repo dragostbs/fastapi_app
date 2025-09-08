@@ -6,13 +6,13 @@ from sqlalchemy.ext.declarative import declarative_base
 
 load_dotenv()
 
-SUPABASE_URL = os.environ.get("SUPABASE_URL")
+SUPABASE_CON = os.environ.get("SUPABASE_CON")
 
-if not SUPABASE_URL:
+if not SUPABASE_CON:
     raise ValueError("Environment variables must be set...")
 
 engine = create_engine(
-    SUPABASE_URL
+    SUPABASE_CON
 )
 
 SessionLocal = sessionmaker(

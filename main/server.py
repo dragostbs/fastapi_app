@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from main.routers import user, todo
+from main.routers import user, todo, auth, service
 from main.database.db import engine, Base
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -23,6 +23,8 @@ Base.metadata.create_all(bind=engine)
 
 app.include_router(user.router)
 app.include_router(todo.router)
+app.include_router(auth.router)
+app.include_router(service.router)
 
 if __name__ == "__main__":
     import uvicorn
